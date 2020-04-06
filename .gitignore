@@ -1,0 +1,18 @@
+logs/
+npm-debug.log
+node_modules/
+coverage/
+.idea/
+run/
+.DS_Store
+*.swp
+*.vscode
+package-lock.json
+# app/public/upload
+app/public/apidoc
+app/ext
+app/controller/ext
+dist/*
+
+
+
