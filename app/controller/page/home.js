@@ -396,7 +396,8 @@ class HomeController extends Controller {
             pageData.userInfo = ctx.session.user;
             pageData.logined = ctx.session.logined;
         }
-        // 静态目录
+
+	// 静态目录
         if (!_.isEmpty(defaultTemp)) {
             pageData.staticforder = defaultTemp.alias;
         } else {

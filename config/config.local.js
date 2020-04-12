@@ -52,8 +52,8 @@ module.exports = appInfo => {
         logger: {
             dir: path.join(appInfo.baseDir, 'logs'),
         },
-        server_path: 'http://127.0.0.1:8080',
-        server_api: 'http://127.0.0.1:8080/api',
+        server_path: 'http://www.dayongfz.com',
+        server_api: 'http://www.dayongfz.com/api',
 
 
     }

@@ -21,14 +21,14 @@
  */
 
 const serverConfig = {
-    env: "development",
+    env: "production",
     dbIP: "127.0.0.1",
     dbPort: "27017",
     dbName: "doracms2",
     dbUserName: "",
     dbPassword: "",
-    os: "Mac",
-    domain: "http://127.0.0.1:8080",
+    os: "Linux",
+    domain: "http://www.dayongfz.com",
     port: "8080",
     tbAgent: "1",
 }

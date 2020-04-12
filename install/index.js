@@ -223,7 +223,7 @@ const askStep_1 = async () => {
 
         } else if (serverConfig.env == 'production') {
             modifyFileByReplace(`${localPath}/config/config.prod.js`, "mongodb://127.0.0.1:27017/doracms2", mongolinkStr);
-            modifyFileByReplace(`${localPath}/config/config.prod.js`, "https://www.html-js.cn", serverConfig.domain);
+            modifyFileByReplace(`${localPath}/config/config.prod.js`, "http://www.dayongfz.com", serverConfig.domain);
             setTimeout(() => {
                 shell.exec('npm run start');
             }, 3000)
