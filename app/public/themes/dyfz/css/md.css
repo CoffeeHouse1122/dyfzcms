@@ -1,0 +1,361 @@
+/* header */
+.header {
+	width: 100%;
+	height: 132px;
+	position: relative;
+	padding: 35px 0 26px 20px;
+	/* background-color: #ccc; */
+}
+.header-cont {
+	width: 100%;
+	margin: 0 auto;
+}
+.header-logo {
+	width: 216px;
+	height: 66px;
+	float: left;
+}
+.header-logo a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.header-logo a img {
+	width: 100%;
+}
+.header-nav {
+	float: right;
+	width: 710px;
+	height: 66px;
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	margin: 0 20px;
+}
+.header-nav li {
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+}
+.header-nav li.cur a {
+	color: #5c88c9;
+}
+
+.header-nav li:hover a {
+	color: #5c88c9;
+}
+
+.header-dp button {
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	padding: 0;
+}
+.header-dp button:focus, .header-dp button:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.dropdown-menu {
+	min-width: 100px;
+	width: 100%;
+}
+
+.header-nav .dropdown-menu li {
+	width: 100%;
+}
+.dropdown-menu>li>a {
+	display: block;
+	padding: 3px 10px;
+	font-size: 18px;
+}
+.header-nav li:hover .header-dp button {
+	color: #5c88c9;
+}
+.header-nav li:hover .header-dp a {
+	color: #333;
+}
+.header-telBox {
+	display: none;
+	width: 218px;
+	height: 66px;
+	border: 1px solid #d2e3e8;
+	padding: 15px 0 0 10px;
+	overflow: hidden;
+}
+.header-icon1 {
+	width: 34px;
+	height: 34px;
+	float: left;
+	margin-right: 15px;
+}
+.header-telTips,.header-telNum {
+	font-size: 18px;
+	color: #5c88c9;
+	font-weight: 700;
+	margin: 0;
+}
+.header-telTips {
+	margin-top: -8px;
+}
+.header-menuBtn {
+	display: none;
+}
+/* banner */
+.home-banner {
+	width: 100%;
+}
+.swiper-container-banner {
+	width: 100%;
+}
+
+.swiper-container-banner .swiper-slide img {
+	width: 100%;
+}
+.banner-prev {
+	background: url(../images/btn_prev.png) no-repeat 0 0 / 100% 100%;
+	width: 69px;
+	height: 69px;
+	transform: scale(1);
+}
+
+.banner-next {
+	background: url(../images/btn_next.png) no-repeat 0 0 / 100% 100%;
+	width: 69px;
+	height: 69px;
+	transform: scale(1);
+}
+.banner-prev::after, .banner-next::after {
+	display: none;
+}
+.swiper-pagination-bullet {
+	width: 16px;
+	height: 16px;
+	margin: 0 8px !important;
+}
+.home-nav {
+	width: 100%;
+	margin-top: 40px;
+}
+.w-lg {
+	width: 100%;
+	margin: 0 auto;
+}
+.home-navCon {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+}
+.home-navLi {
+	width: 240px;
+	height: 128px;
+	padding: 20px 0 0 15px ;
+	border: 2px solid #d2e3e8;
+	transform: scale(1);
+}
+.home-navIcon {
+	float: left;
+	width: 64px;
+	margin-right: 10px;
+}
+.home-navTitle {
+	color: #5c88c9;
+	font-size: 18px;
+	font-weight: 700;
+}
+.home-navInfo {
+	color: #a4a4a4;
+	font-size: 14px;
+}
+.home-navLink {
+	display: inline-block;
+	width: 114px;
+	height: 30px;
+	background-color: #5c88c9;
+	color: #fff;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 18px;
+	margin-left: 0px;
+}
+.home-navLink:hover {
+	color: #ccc;
+}
+.home-content1 {
+	margin-top: 40px;
+	width: 100%;
+}
+.home-company {
+	height: 391px;
+}
+.home-company-header, .home-news-header, .home-production-header {
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	overflow: hidden;
+}
+.home-company-header-title, .home-news-header-title, .home-production-header-title {
+	float: left;
+	color: #000;
+	font-weight: 700;
+	font-size: 24px;
+}
+.home-company-header-more, .home-news-header-more, .home-production-header-more {
+	float: right;
+	color: #555;
+}
+.home-company-con {
+  height: 336px;
+}
+.home-company-con-img {
+	width: 279px;
+	float: left;
+	margin: 0 24px 20px 0;
+}
+.home-company-con-info {
+	color: #606060;
+	line-height: 1.5;
+}
+.home-news {
+	padding-left: 68px;
+}
+.home-news-header {
+	border-bottom: 1px dashed #ccc;
+}
+.home-news-con {
+	height: 278px;
+}
+.home-news-conLi {
+	width: 100%;
+	height: 55px;
+	border-bottom: 1px dashed #ccc;
+	line-height: 55px;
+	font-size: 16px;
+}
+.home-news-conLi a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.home-news-conLi span{
+	display: inline-block;
+	overflow: hidden;
+}
+.home-news-conLi .home-news-conLi-title {
+	width: 310px;
+  color: #494949;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.home-news-conLi .home-news-conLi-icon {
+	color: #0083cc;
+	height: 100%;
+	padding-left: 10px;
+	line-height: 55px;
+	font-size: 12px;
+}
+.home-news-conLi-time {
+	float: right;
+	padding-right: 10px;
+}
+.home-news-conLi a:hover span {
+	color: #0083cc;
+}
+.home-content2 {
+	margin-top: 36px;
+}
+.home-production-con {
+	margin: 0;
+}
+.home-production-header {
+	padding: 0 10px;
+}
+.home-production-conLi a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.home-production-conLi a img {
+	width: 100%;
+}
+.home-production-conLi a span {
+	display: block;
+	margin: 20px auto 0;
+	width: 90%;
+	text-align: center;
+	font-size: 16px;
+}
+.home-production-conLi a:hover span {
+	color: #0083cc;
+}
+/* footer */
+.footer {
+	margin-top: 66px;
+	width: 100%;
+	height: 382px;
+}
+.footer-top {
+	background-color: #373737;
+	height: 296px;
+}
+.footer-bottom {
+	background-color: #292929;
+	height: 85px;
+}
+.footer-top-left {
+	position: relative;
+	overflow: hidden;
+	padding-left: 30px;
+	text-align: left;
+}
+.footer-p-company1 {
+	font-size: 28px !important;
+	color: #fff !important;
+	font-weight: 700;
+	margin-top: 70px !important;
+}
+.footer-p-company2 {
+	font-size: 14px !important;
+	color: #727272 !important;
+}
+.footer-p-address {
+	color: #dddddd;
+	margin-top: 24px !important;
+}
+.footer-top-left p {
+	margin-top: 5px;
+	color: #dddddd;
+	font-size: 14px;
+}
+.footer-qr {
+	margin-top: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+.footer-qr li {
+	width: 134px;
+}
+.footer-qr li img {
+	width: 100%;
+}
+.footer-qr li span {
+	display: block;
+	width: 100%;
+	font-size: 12px;
+	color: #dddddd;
+	text-align: center;
+	line-height: 2;
+}
+.footer-bottom {
+	padding-top: 30px;
+}
+.footer-bottom p {
+	text-align: center;
+	line-height: 1.5;
+	color: #727272;
+	font-size: 14px;
+}
