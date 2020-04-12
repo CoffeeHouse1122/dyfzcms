@@ -386,7 +386,7 @@ class HomeController extends Controller {
         let pageData = {
             pageType: ctx.pageType
         };
-
+        
         let targetTempPage = ctx.tempPage;
         // 获取当前模板信息
         let defaultTemp = await ctx.helper.reqJsonData('contentTemplate/getDefaultTempInfo');
