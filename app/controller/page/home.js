@@ -154,6 +154,42 @@ class HomeController extends Controller {
         ctx.pageType = "index"
         await this.getPageData(this);
     }
+    // dyfz 自定义controller
+    async getDataForContactPage() {
+        const ctx = this.ctx;
+        ctx.query.current = ctx.params.current;
+        ctx.tempPage = 'contact.html';
+        ctx.pageType = "index"
+        await this.getPageData(this);
+    }
+    async getDataForAboutPage() {
+        const ctx = this.ctx;
+        ctx.query.current = ctx.params.current;
+        ctx.tempPage = 'about.html';
+        ctx.pageType = "index"
+        await this.getPageData(this);
+    }
+    async getDataForNewsPage() {
+        const ctx = this.ctx;
+        ctx.query.current = ctx.params.current;
+        ctx.tempPage = 'news.html';
+        ctx.pageType = "index"
+        await this.getPageData(this);
+    }
+    async getDataForProductPage() {
+        const ctx = this.ctx;
+        ctx.query.current = ctx.params.current;
+        ctx.tempPage = 'product.html';
+        ctx.pageType = "index"
+        await this.getPageData(this);
+    }
+    async getDataForDetailPage() {
+        const ctx = this.ctx;
+        ctx.query.current = ctx.params.current;
+        ctx.tempPage = 'detail.html';
+        ctx.pageType = "index"
+        await this.getPageData(this);
+    }
 
     async getDataForCatePage() {
         const ctx = this.ctx;
@@ -386,7 +422,7 @@ class HomeController extends Controller {
         let pageData = {
             pageType: ctx.pageType
         };
-        
+
         let targetTempPage = ctx.tempPage;
         // 获取当前模板信息
         let defaultTemp = await ctx.helper.reqJsonData('contentTemplate/getDefaultTempInfo');
@@ -396,8 +432,7 @@ class HomeController extends Controller {
             pageData.userInfo = ctx.session.user;
             pageData.logined = ctx.session.logined;
         }
-
-	// 静态目录
+        // 静态目录
         if (!_.isEmpty(defaultTemp)) {
             pageData.staticforder = defaultTemp.alias;
         } else {
@@ -483,7 +518,7 @@ class HomeController extends Controller {
                 targetTempPage = this.getCateOrDetailTemp(defaultTempItems, '', 'cate');
                 payload.tagName && (pageData.targetTagName = payload.tagName);
                 pageData.documentList = await ctx.helper.reqJsonData('content/getList', payload);
-            }
+            } 
             pageData.ogData = {
                 url: ogUrl,
                 img: ogImg

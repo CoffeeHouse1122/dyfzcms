@@ -310,6 +310,9 @@
 	width: 95%;
 	text-align: center;
 	font-size: 0.18rem;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .home-production-conLi a:hover span {
 	color: #0083cc;
@@ -381,4 +384,246 @@
 	line-height: 1.5;
 	color: #727272;
 	font-size: 0.14rem;
+}
+/* ???? */
+.c-banner {
+	width: 100%;
+	overflow: hidden;
+}
+.c-banner img {
+	width: 100%;
+}
+.c-con {
+	padding-bottom: 0.3rem;
+}
+.c-con .w-lg {
+	padding: 0 0.2rem;
+	overflow: hidden;
+}
+.c-title {
+	border-bottom: 2px solid #cfcfcf;
+	padding: 0.6rem 0.05rem 0.15rem;
+	overflow: hidden;
+	font-size: 0.3rem;
+	margin-bottom: 0.2rem;
+}
+.c-left {
+	padding-bottom: 0.2rem;
+}
+.c-company1 {
+	font-weight: 600;
+	color: #777;
+	font-size: 0.24rem;
+}
+.c-company2 {
+	font-size: 0.22rem;
+	margin-bottom: 0.2rem;
+}
+.c-address, .c-phone, .c-email, .c-tel, .c-ali {
+	font-size: 0.2rem;
+	color: #777;
+	padding: 0.05rem;
+}
+#dituContent {
+	width: 100%;
+	height: 4rem;
+	border:#ccc solid 1px;
+}
+
+/* ???? */
+.com-con {
+	margin-top: 0.1rem;
+	padding-bottom: 0.3rem;
+}
+.com-con .w-lg {
+	padding: 0 0.2rem;
+	overflow: hidden;
+}
+
+.com-right-title {
+	border-bottom: 3px solid #e7e7e7;
+	padding: 0.15rem 0;
+	text-align: right;
+}
+.com-right-title .com-sideBar-btn {
+	cursor: pointer;
+	float: left;
+	font-size: 0.3rem;
+	margin-left: 0.1rem;
+	color: #666;
+}
+.com-right-title span {
+	color: #0083cc;
+	font-weight: 700;
+	border-bottom: 3px solid #0083cc;
+	padding: 0 0.1rem 0.15rem;
+	font-size: 0.2rem;
+}
+.com-right-con {
+	padding: 0.1rem;
+	margin-top: 0.1rem;
+}
+.com-right-con p {
+	font-size: 0.16rem;
+}
+
+.com-sideBar-mask {
+	display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1090;
+  background: rgba(0,0,0,.15);
+}
+.com-sideBar-mask.cur {
+	display: block;
+}
+
+.com-sideBar-con  {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1091;
+	width: 3rem;
+	max-width: 100%;
+	background: #333;
+	overflow-y: auto;
+	transform: translateX(-100%);
+	transition: transform .3s ease-in-out;
+	padding: 0 0.1rem;
+}
+
+.com-sideBar-con.cur {
+	transform: translateX(0);
+}
+
+.com-sideBar-con li {
+	text-align: center;
+	width: 100%;
+}
+.com-sideBar-con li a {
+	font-size: 0.2rem;
+	color: #686868;
+	margin: 0 0.05rem;
+	display: block;
+	border-bottom: 1px dashed #b0b0b0;
+	padding: 0.3rem 0 0.2rem;
+	position: relative;
+}
+.com-sideBar-con li i {
+	font-size: 0.16rem;
+	display: none;
+	color: #0083cc;
+	position: absolute;
+	right: 0.2rem;
+	top: 50%;
+	transform: translateY(-20%);
+}
+
+.com-sideBar-con li:hover a {
+	color: #0083cc;
+}
+
+.com-sideBar-con li.cur a {
+	color: #0083cc;
+}
+.com-sideBar-con li.cur i {
+	display: inline-block;
+}
+/* ???? */
+.nl-news-con {
+	/* height: 278px; */
+}
+.nl-news-conLi {
+	width: 100%;
+	height: 0.55rem;
+	border-bottom: 1px dashed #ccc;
+	line-height: 0.55rem;
+	font-size: 0.18rem;
+}
+.nl-news-conLi a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nl-news-conLi span{
+	display: inline-block;
+	overflow: hidden;
+}
+.nl-news-conLi .nl-news-conLi-title {
+	width: 4rem;
+  color: #494949;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.nl-news-conLi .nl-news-conLi-icon {
+	color: #0083cc;
+	height: 100%;
+	padding-left: 0.1rem;
+	line-height: 0.5rem;
+	font-size: 0.12rem;
+}
+.nl-news-conLi-time {
+	float: right;
+	padding-right: 0.1rem;
+}
+.nl-news-conLi a:hover span {
+	color: #0083cc;
+}
+/* ???? */
+.pl-right-type {
+	margin-top: 0.1rem;
+	background-color: #e7e7e7;
+	padding: 0.15rem 0.15rem;
+	overflow: hidden;
+}
+.pl-right-type ul li {
+	font-size: 0.18rem;
+	text-align: center;
+	padding: 0 0.1rem;
+	float: left;
+	border-right: 2px solid #000;
+	cursor: pointer;
+}
+.pl-right-type ul li:last-child {
+	border-right: none;
+}
+
+.pl-right-type ul li:hover {
+	color: #0083cc;
+}
+.pl-right-type ul li.cur {
+	color: #0083cc;
+}
+.pl-right-con ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.pl-right-con ul li {
+	width: 30%;
+	padding: 0.1rem;
+	overflow: hidden;
+}
+.pl-right-con ul li a {
+	display: block;
+	width: 100%;
+}
+.pl-right-con ul li a img {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+.pl-right-con ul li a span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 0.1rem;
+	white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }

@@ -12,6 +12,12 @@ module.exports = app => {
     router.get("/sitemap.html", controller.page.home.getDataForSiteMap);
 
     router.get(["/", "/zh-CN", "/zh-TW", "/en"], controller.page.home.getDataForIndexPage);
+    // dyfz 自定义router
+    router.get("/contact", controller.page.home.getDataForContactPage);
+    router.get("/about", controller.page.home.getDataForAboutPage);
+    router.get("/news", controller.page.home.getDataForNewsPage);
+    router.get("/product", controller.page.home.getDataForProductPage);
+    router.get("/detail", controller.page.home.getDataForDetailPage);
 
     router.get("/page/:current.html", controller.page.home.getDataForIndexPage);
 
